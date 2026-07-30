@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Birthday Gift ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+    <h3 id="surpriseTitle" style="color:#FFD700;">
+        ✨ Your Surprise Awaits ✨
+    </h3>
+
+    <div id="giftBox"
+         onclick="openGift()"
+         style="font-size:120px;cursor:pointer;margin:30px 0;">
+        🎁
+    </div>
+
+    <h2 id="giftText" style="display:none;">
+        🎉 Happy Birthday Poornendhu ❤️
+    </h2>
+
+    <p id="giftMessage"
+       style="display:none;line-height:1.4;margin-bottom:10px;">
+        May this birthday bring endless happiness,
+        beautiful memories,
+        and countless reasons to smile. 💖
+    </p>
+
+    <div id="gallery" style="display:none;margin-top:10px;">
+
+        <div class="photo-section">
+
+            <h2 class="gallery-title">
+                Beautiful Memories ❤️
+            </h2>
+
+            <div class="slideshow">
+
+                <img src="images/photo1.jpg" class="slide active">
+                <img src="images/photo2.jpg" class="slide">
+                <img src="images/photo3.jpg" class="slide">
+                <img src="images/photo4.jpg" class="slide">
+                <img src="images/photo5.jpg" class="slide">
+                <img src="images/photo6.jpg" class="slide">
+                <img src="images/photo7.jpg" class="slide">
+                <img src="images/photo8.jpg" class="slide">
+                <img src="images/photo9.jpg" class="slide">
+                <img src="images/photo10.jpg" class="slide">
+                <img src="images/photo11.jpg" class="slide">
+
+            </div>
+
+        </div>
+
+    </div>
+        <!-- Countdown Section -->
+
+    <div id="countdownSection"
+         style="display:none;margin-top:10px;">
+
+        <h3 style="color:#FFD700;">
+            Next Surprise In
+        </h3>
+
+        <h1 id="countdownTimer"
+            style="color:white;font-size:50px;">
+            00:23
+        </h1>
+
+        <button id="nextBtn"
+                onclick="showLetter()"
+                style="display:none;">
+            ✨ Next Surprise ❤️
+        </button>
+
+    </div>
+
+    <!-- Letter Section -->
+
+    <div id="letterSection"
+         style="display:none;margin-top:30px;text-align:center;">
+
+        <div id="envelope"
+             onclick="openLetter()"
+             style="font-size:100px;cursor:pointer;">
+            💌
+        </div>
+
+        <h3 style="color:#FFD700;">
+            A Letter Just For You
+        </h3>
+
+        <p id="tapText" style="color:white;">
+            Tap the envelope to open your birthday letter.
+        </p>
+
+        <div id="letterBox" style="display:none;">
+
+            <h2 style="color:#FFD700;">
+                Dear Poornendhu,
+            </h2>
+
+            <p id="letterText"></p>
+
+            <button id="continueBtn"
+                    onclick="showFinalPage()"
+                    style="display:none;">
+                Continue ✨
+            </button>
+
+        </div>
+
+    </div>
+        <!-- Final Page -->
+
+    <div id="finalSection"
+         style="display:none;
+                width:100%;
+                max-width:700px;
+                margin:40px auto;
+                text-align:center;">
+
+        <h2 style="color:#FFD700;
+                   font-family:'Cinzel',serif;
+                   margin-bottom:25px;">
+            ❤️ Forever In My Heart ❤️
+        </h2>
+
+        <img src="images/photo12.png"
+             alt="Forever Memory"
+             style="
+                display:block;
+                width:95%;
+                max-width:500px;
+                margin:0 auto 30px auto;
+                border-radius:20px;
+                border:3px solid #FFD700;
+                box-shadow:0 0 25px rgba(255,215,0,.35);
+             ">
+
+        <p style="font-size:20px;line-height:1.8;">
+            Some memories are not just moments,<br>
+            they become a beautiful part of life. ❤️
+        </p>
+
+        <p style="font-size:20px;line-height:1.8;">
+            Thank you for all the smiles<br>
+            and happiness.
+        </p>
+
+        <h2 style="color:#FFD700;margin-top:20px;">
+            ✨ Once Again,<br>
+            Happy Birthday Poornendhu! 🎂✨
+        </h2>
+
+        <h3 style="margin-top:30px;color:white;">
+            With Love,<br>
+            <span style="color:#FFD700;">Saran ❤️</span>
+        </h3>
+
+        <p class="end-line">
+            The End... but the memories will last forever. ❤️
+        </p>
+
+    </div>
+    </div> <!-- container -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
